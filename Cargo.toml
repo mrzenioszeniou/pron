@@ -1,0 +1,13 @@
+[package]
+name = "pron"
+version = "0.0.1"
+edition = "2021"
+description = "A tiny command line tool that allows converting data between JSON and protobuf."
+
+[dependencies]
+anyhow = "1.0.87"
+clap = { version = "4.5.17", features = ["derive"] }
+prost = "0.13.2"
+prost-reflect = { version = "0.14.1", features = ["serde"] }
+serde_json = "1.0.128"
+uuid = { version = "1.10.0", features = ["v4"] }
